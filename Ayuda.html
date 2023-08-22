@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>PAE plus</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+</head>
+
+<body>
+<header>
+	<div class="container">
+		<div class="row top">
+			
+			<div class="col-md-4"><a href="#home" data-ancla="home" class="off">
+				<img src="img/logo.jpg" alt="Logo" class="logo" ></a></div>
+			
+			<div class="col-md-3"></div>
+			<div class="col-md-5">
+				<ul class='botonera'>
+                    <li><button= onclick="location.href='http://127.0.0.1:5500/Index.html'">Inicio</button></li>
+					<li><button= onclick="location.href='http://127.0.0.1:5500/pagina1.html'">Quienes somos</button></li>
+					<li><a href="#contacto" data-ancla="Contacto">Contacto</a></li>
+					<li><button= onclick="location.href='http://127.0.0.1:5500/Ayuda.html'">Ayuda</button></li>
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+
+
+<div class="nosotros white" id="preguntas">
+	<div class="container" id="ayuda">
+		<div>
+			<h1 id="title">Preguntas frecuentes</h1>
+		</div></br>
+	</br>
+
+		<a style="font-size: 50px; color: black;" title="Preguntas" Preguntas frecuentes></a>
+		
+		<h2> ¿Puedo solicitar citas sin inscribirme?</h2>
+		<p>Para solicitar un servicio de profesionales debe tener un vinculo laboral con su empresa e inscribirse en la plataforma por el enlace de Solicitar tus citas</p>
+		<h2> ¿Qué citas puedo solicitar?</h2>
+		<p>El servicio de profesionales cuenta con Medicina, Psicología y Nutrición inicialmente, mas adelante se prestaran servicios con otros profesionales al igual que se podrá capacitar en diferentes temas</p>
+		<h2> ¿En que horarios pueden atenderme?</h2>
+		<p>El servicio se presta de Lunes a Sabado de 8:00 am a 12:00 m y de 2:00 p.m. a 6:00 p.m.</p>
+		<h2> ¿En que horarios pueden atenderme?</h2>
+		<p>El servicio se presta de Lunes a Sabado de 8:00 am a 12:00 m y de 2:00 p.m. a 6:00 p.m.</p>
+		<h2> ¿En caso de perder mi usuario y contraseña que puedo hacer?</h2>
+		<p>Recuerde que puede utilizar el enlace de contacto de correo en la parte inferior de la página escribiendo al <a= href="paeplusempleados@gmail.com">paeplusempleados@gmail.com </a></p>
+	</div>
+</div>
+
+
+
+
+<footer>
+	<div class="container" id="contacto">
+		<div class="row">
+			<div class="col-md-12">
+					<h1>CONTACTO</h1><br><br>
+
+			</div>
+		</div>
+		<div class="row social">
+		<div class="col-3"></div>	
+					<div class="col-2">
+						<a href="mailto:paeplusempleados@gmail.com?subject=Contacto&body=Consulta"><img src="img/001-mail.svg" alt=""></a></div>
+
+					<div class="col-2">
+						<a href="https://www.facebook.com/profile.php?id=61550343776148"  target="_blank"><img src="img/002-facebook-logo.svg" alt=""></a></div>
+
+
+					<div class="col-2">
+						<a target="_blank" href="https://www.instagram.com/paeplusempleados/" ><img src="img/003-instagram-social-network-logo-of-photo-camera.svg" alt=""></a></div>	
+	</div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+	
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+</body>
+</html>
